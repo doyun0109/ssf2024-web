@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  //@media (max-width: 1200px) {
+  //  padding: 12px 20px;
+  //}
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 12px 0;
+  @media (max-width: 1200px) {
+    padding: 12px 20px;
+  }
+}
+
+.filterButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  min-width: 76px;
+
+  background-color: transparent;
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.0057em;
+
+  cursor: pointer;
+
+  &[data-selected=true] {
+    background-color: var(--primary);
+    color: #121217;
+  }
+}
+
+.campCardContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 48px 20px;
+  padding: 24px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (max-width: 1200px) {
+
+  }
+
+  @media (max-width: 700px) {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 24px 20px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
