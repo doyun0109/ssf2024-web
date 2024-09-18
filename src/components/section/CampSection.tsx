@@ -2,15 +2,13 @@
 
 import styles from './CampSection.module.scss';
 import {getCampList} from "@/lib/api/camp";
-import CampList from "@/components/common/CampList";
+import {CampList} from "@/components/common/camp";
 
 
 const CampSection = async () => {
     // const [department, setDepartment] = useState<Department | null>(null);
 
     const clubList = await getCampList()
-
-    console.log(clubList);
 
     return (
         <div className={styles.wrapper}>

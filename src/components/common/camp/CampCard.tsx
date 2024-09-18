@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from "next/image";
 import Camp from "@/lib/types/Camp";
-import styles from '@/components/common/CampCard.module.scss';
+import styles from './CampCard.module.scss';
 
 interface Props {
     camp: Camp,

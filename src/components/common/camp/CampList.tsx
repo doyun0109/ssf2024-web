@@ -1,10 +1,10 @@
 'use client'
 
-import styles from '@/components/common/CampList.module.scss';
+import styles from './CampList.module.scss';
 import Camp from "@/lib/types/Camp";
 import {useState} from "react";
 import Department from "@/lib/types/Department";
-import CampCard from "@/components/common/CampCard";
+import {CampCard} from "@/components/common/camp";
 import { useRouter } from 'next/navigation'
 
 
