@@ -42,7 +42,6 @@ const CampDetail = ({camp}: Props) => {
                         const shareData = {
                             title: "SSF 2024",
                             text: `2024소프트웨어 나눔 축제\n${camp.campName}: https://ssf.sunrin.io/camp/${camp.clubId}`,
-                            url: `https://ssf.sunrin.io/camp/${camp.clubId}`,
                         };
                         if (navigator.canShare(shareData)) await navigator.share(shareData);
                     }}>
