@@ -61,4 +61,50 @@ const CampDetail = ({camp}: Props) => {
     );
 };
 
+const Skeleton = () => {
+    return (
+        <div className={styles.container}>
+            <div style={{width: 204, height: 283, background: '#d5d5d5'}}/>
+            <div className={styles.infoContainer}>
+
+                <div className={styles.tagContainer}>
+                    {['tag1', 'tag2', 'tag3'].map((tag) => (
+                        <div
+                            key={`skeleton-${tag}`}
+                            className={styles.tag} style={{
+                            background: '#fff',
+                            color: '#121217'
+                        }}>
+                            {tag}
+                        </div>
+                    ))}
+                </div>
+                <p className={styles.title}>Loading</p>
+                <p className={styles.description}>Loading</p>
+            </div>
+
+            <div className={styles.line}/>
+
+            <div className={styles.linkContainer}>
+                <button
+                    className={styles.shareButton}
+                    style={{gridArea: 'share'}}>
+                    <Image src={'/assets/icon/share.svg'} alt={'arrow'} width={24} height={24}/>
+                    캠프 공유하기
+                </button>
+                <div className={styles.linkButton} style={{gridArea: 'link-web'}}>
+                    <Image src={'/assets/icon/arrow.svg'} alt={'arrow'} width={24} height={24}/>
+                    동아리 웹사이트
+                </div>
+                <div className={styles.linkButton} style={{gridArea: 'link-sns'}}>
+                    <Image src={'/assets/icon/arrow.svg'} alt={'arrow'} width={24} height={24}/>
+                    동아리 SNS
+                </div>
+            </div>
+        </div>
+    )
+}
+
+CampDetail.Skeleton = Skeleton;
+
 export default CampDetail;
