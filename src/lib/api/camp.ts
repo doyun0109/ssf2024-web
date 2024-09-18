@@ -29,8 +29,5 @@ export const getCampByClubId = async (clubId: string) => {
         doc(firestore, 'clubs', clubId)
     ).then(doc => ({clubId: doc.id, ...doc.data()} as Camp));
 
-
-    console.log(camp);
-
     return camp;
 }
