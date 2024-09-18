@@ -1,0 +1,90 @@
+.wrapper {
+  width: 100%;
+
+  background: #fff;
+  padding: 48px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 1200px) {
+    padding: 48px 16px;
+  }
+}
+
+
+.container {
+
+  max-width: 1100px;
+  width: 100%;
+
+
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+
+  .logoTitle {
+    color: #121217;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.023em;
+  }
+
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+
+  .info {
+    color: #14141A;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.0057em;
+  }
+}
+
+
+.memberContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  white-space: pre-wrap;
+
+  .team {
+    color: #121217;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.0057em;
+  }
+
+  .member {
+    color: #14141A;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.0057em;
+  }
+}
+
