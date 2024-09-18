@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(18, 18, 23, 0.60);
+  backdrop-filter: blur(16px);
+  position: fixed;
+  z-index: 100;
+  padding: 24px 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+}

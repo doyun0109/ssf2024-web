@@ -2,6 +2,8 @@
 :root {
   --primary: #33FB65;
   --background: #121217;
+
+  --headerHeight: 72px;
 }
 
 * {

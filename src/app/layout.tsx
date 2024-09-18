@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import {ReactNode} from "react";
 import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
 
 const pretendard = localFont({
     src: "./fonts/PretendardVariable.woff2",
@@ -21,6 +22,7 @@ export default function RootLayout({children,}: Readonly<{ children: ReactNode; 
     return (
         <html lang="ko">
         <body className={`${pretendard.variable} ${pretendard.className}`}>
+        <Header/>
         {children}
         <Footer/>
         </body>
