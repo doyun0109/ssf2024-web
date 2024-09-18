@@ -1,13 +1,9 @@
-// 'use client'
-
 import styles from './CampSection.module.scss';
 import {getCampList} from "@/lib/api/camp";
 import {CampList} from "@/components/common/camp";
 
 
 const CampSection = async () => {
-    // const [department, setDepartment] = useState<Department | null>(null);
-
     const clubList = await getCampList()
 
     return (
