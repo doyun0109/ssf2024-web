@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children,}: Readonly<{ children: ReactNode; }>) {
     return (
         <html lang="ko">
-        <body className={`${pretendard.variable}`}>
+        <body className={`${pretendard.variable} ${pretendard.className}`}>
         {children}
         <Footer/>
         </body>
