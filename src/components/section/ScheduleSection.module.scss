@@ -20,19 +20,20 @@
   @media (max-width: 500px) {
     padding: 24px 0;
   }
+  .title {
+    color: var(--primary);
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .description {
+    color: #F0FFF4;
+    font-size: 16px;
+    font-weight: 500;
+  }
 }
 
-.title {
-  color: var(--primary);
-  font-size: 32px;
-  font-weight: 700;
-}
 
-.description {
-  color: #F0FFF4;
-  font-size: 16px;
-  font-weight: 500;
-}
 
 .circleContainer {
   display: flex;
