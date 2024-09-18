@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #14141A;
+  @media (max-width: 900px) {
+    padding: 0 20px
+  }
+}
+
+.typography {
+  background: linear-gradient(90deg, #33FB65 0%, #33FBAE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  word-wrap: break-word;
+  //word-break: break-all;
+  word-break: keep-all;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 44.8px */
+  //width: 850px;
+
+  @media (max-width: 500px) {
+    font-size: 24px;
+  }
+}

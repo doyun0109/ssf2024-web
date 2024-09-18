@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  gap: 100px;
+
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+}
+
+.buttonContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  bottom: 64px;
+  width: 100%;
+    justify-content: center;
+
+  @media (max-width: 400px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@mixin button {
+  width: 146px;
+  height: 50px;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:active {
+  }
+
+  @media (max-width: 400px) {
+    width: 100%;
+    max-width: 240px;
+  }
+}
+
+.applyButton {
+  @include button;
+  background: var(--primary);
+  color: #121217;
+  font-weight: 900;
+}
+
+.explainButton {
+  @include button;
+  background: transparent;
+  color: #C6C6D2;
+  box-shadow: 0 0 0 2px #383848 inset;
+  font-weight: 600;
+}
