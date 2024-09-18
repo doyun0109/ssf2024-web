@@ -1,5 +1,6 @@
 import styles from './Footer.module.scss';
 import {getTeamMember} from "@/lib/api/team";
+import Image from "next/image";
 
 
 const Footer = async () => {
@@ -13,9 +14,11 @@ const Footer = async () => {
             <div className={styles.container}>
                 <div className={styles.infoContainer}>
                     <div className={styles.logoContainer}>
-                        <img
+                        <Image
                             src={'/assets/icon/sunrin-logo.svg'}
                             alt={'logo'}
+                            width={24}
+                            height={30}
                             className={styles.logo}
                         />
                         <p className={styles.logoTitle}>
