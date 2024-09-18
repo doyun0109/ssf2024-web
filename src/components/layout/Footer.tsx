@@ -40,7 +40,7 @@ const Footer = async () => {
                     </div>
                     <div>
                         <p className={styles.team}>
-                            디자인팀
+                            개발팀
                         </p>
                         <p className={styles.member}>
                             {developer.join('   ')}
