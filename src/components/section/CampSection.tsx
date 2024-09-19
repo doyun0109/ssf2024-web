@@ -19,7 +19,7 @@ const CampSection = async () => {
                     </svg>
                     <div style={{height: 12}}/>
                     <div className={styles.description}>
-                        <p>소프트웨어과 정보보호과가 준비한</p>
+                        <p>소프트웨어과 정보보호과가 준비한 </p>
                         <p><b>9개</b>의 동아리 캠프를 소개합니다!</p>
                     </div>
                 </div>
