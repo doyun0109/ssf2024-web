@@ -52,7 +52,7 @@ const CampDetail = ({camp}: Props) => {
                     <Image src={'/assets/icon/arrow.svg'} alt={'arrow'} width={24} height={24}/>
                     동아리 웹사이트
                 </Link>
-                <Link href={camp.clubWeb} className={styles.linkButton} style={{gridArea: 'link-sns'}}>
+                <Link href={camp.clubSns} className={styles.linkButton} style={{gridArea: 'link-sns'}}>
                     <Image src={'/assets/icon/arrow.svg'} alt={'arrow'} width={24} height={24}/>
                     동아리 SNS
                 </Link>
