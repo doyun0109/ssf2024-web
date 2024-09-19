@@ -6,10 +6,25 @@
   flex-direction: column;
   padding: 14px 16px;
   gap: 22px;
+
+  cursor: pointer;
+  user-select: none;
+
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background: #2D2D35;
+    }
+  }
+
+  &:active {
+    scale: 1.025;
+  }
+
+  transition: all 0.3s ease-in-out;
 }
 
 .questionContainer {
-  cursor: pointer;
   width: 100%;
   display: flex;
   flex-direction: row;

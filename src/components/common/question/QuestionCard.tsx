@@ -12,8 +12,8 @@ const QuestionCard = ({question}: Props) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className={styles.container}>
-            <div className={styles.questionContainer} onClick={() => setIsOpen(!isOpen)}>
+        <div className={styles.container} onClick={() => setIsOpen(!isOpen)}>
+            <div className={styles.questionContainer}>
                 <p className={styles.category}>{question.category}</p>
                 <p className={styles.question}>{question.question}</p>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{
