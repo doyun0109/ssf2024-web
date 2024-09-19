@@ -64,7 +64,7 @@ const CampDetail = ({camp}: Props) => {
 const Skeleton = () => {
     return (
         <div className={styles.container}>
-            <div style={{width: 204, height: 283, background: '#d5d5d5'}}/>
+            <div style={{width: 204, height: 283, background: '#fff'}}/>
             <div className={styles.infoContainer}>
 
                 <div className={styles.tagContainer}>
