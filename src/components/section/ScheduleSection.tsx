@@ -11,7 +11,8 @@ const ScheduleSection = async () => {
 
     const formater = new Intl.DateTimeFormat('ko', {
         month: '2-digit',
-        day: '2-digit'
+        day: '2-digit',
+        timeZone: 'Asia/Seoul'
     });
 
     return (
