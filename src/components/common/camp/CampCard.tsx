@@ -13,7 +13,7 @@ interface Props {
 const CampCard = ({camp, onClick}: Props) => {
     return (
         <div className={styles.container} onClick={onClick}>
-            <Image src={camp.bookCover} alt={'book-cover'} width={204} height={283}/>
+            <Image src={camp.bookCover} alt={'book-cover'} width={204} height={283} quality={60}/>
             <p className={styles.title}>
                 {camp.campName}
             </p>
