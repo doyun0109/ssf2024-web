@@ -1,6 +1,7 @@
 import styles from './page.module.scss';
 import {getCampByClubId} from "@/lib/api/camp";
 import {CampDetail} from "@/components/common/camp";
+import {notFound} from 'next/navigation';
 
 interface Props {
     params: { clubId: string }
@@ -9,6 +10,10 @@ interface Props {
 const Page = async ({params}: Props) => {
 
     const camp = await getCampByClubId(params.clubId);
+
+    if (!camp) {
+        notFound();
+    }
 
     return (
         <div className={styles.wrapper}>

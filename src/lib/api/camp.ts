@@ -27,7 +27,11 @@ export const getCampList = async (
 export const getCampByClubId = async (clubId: string) => {
     const camp = await getDoc(
         doc(firestore, 'clubs', clubId)
-    ).then(doc => ({clubId: doc.id, ...doc.data()} as Camp));
+    );
 
-    return camp;
+    if (!camp.exists()) {
+        return null;
+    }
+
+    return {clubId: camp.id, ...camp.data()} as Camp;
 }
