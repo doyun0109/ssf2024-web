@@ -1,7 +1,19 @@
 import styles from './ScheduleSection.module.scss';
+import {getSchedule} from "@/lib/api/schedule";
 
 
-const ScheduleSection = () => {
+const ScheduleSection = async () => {
+    const {
+        applyStartDate,
+        applyEndDate,
+        campDate
+    } = await getSchedule();
+
+    const formater = new Intl.DateTimeFormat('ko', {
+        month: '2-digit',
+        day: '2-digit'
+    });
+
     return (
         <div className={styles.container}>
             <div className={styles.titleContainer}>
@@ -20,17 +32,17 @@ const ScheduleSection = () => {
             <div className={styles.circleContainer}>
                 <div className={styles.circle}>
                     지원 시작<br/>
-                    09.20
+                    {formater.format(applyStartDate.toDate())}
                 </div>
                 <div className={styles.line}/>
                 <div className={styles.circle} data-fill={true}>
                     지원 마감<br/>
-                    10.20
+                    {formater.format(applyEndDate.toDate())}
                 </div>
                 <div className={styles.line}/>
                 <div className={styles.circle}>
                     캠프 진행<br/>
-                    11.02
+                    {formater.format(campDate.toDate())}
                 </div>
             </div>
         </div>
