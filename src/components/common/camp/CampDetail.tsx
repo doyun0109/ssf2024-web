@@ -13,7 +13,7 @@ interface Props {
 const CampDetail = ({camp}: Props) => {
     return (
         <div className={styles.container}>
-            <Image src={camp.bookCover} alt={`${camp.clubId}-cover`} width={204} height={283}/>
+            <Image src={camp.bookCover} alt={`${camp.clubId}-cover`} width={204} height={283} priority/>
             <div className={styles.infoContainer}>
 
                 <div className={styles.tagContainer}>
