@@ -5,7 +5,7 @@ import Camp from "@/lib/types/Camp";
 import {useState} from "react";
 import Department from "@/lib/types/Department";
 import {CampCard} from "@/components/common/camp";
-import { useRouter } from 'next/navigation'
+import Link from "next/link";
 
 
 interface Props {
@@ -13,7 +13,6 @@ interface Props {
 }
 
 const CampList = ({campList}: Props) => {
-    const router = useRouter();
     const [department, setDepartment] = useState<Department | null>(null);
 
     return (
@@ -43,7 +42,9 @@ const CampList = ({campList}: Props) => {
                 {campList.filter((camp) =>
                     department ? camp.department === department : true
                 ).map((camp, index) => (
-                    <CampCard key={index} camp={camp} onClick={() => router.push(`/camp/${camp.clubId}`)}/>
+                    <Link href={`/camp/${camp.clubId}`} key={index}>
+                        <CampCard camp={camp}/>
+                    </Link>
                 ))}
             </div>
         </div>
