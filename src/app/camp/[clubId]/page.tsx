@@ -1,11 +1,20 @@
 import styles from './page.module.scss';
-import {getCampByClubId} from "@/lib/api/camp";
+import {getCampByClubId, getCampList} from "@/lib/api/camp";
 import {CampDetail} from "@/components/common/camp";
-import {notFound} from 'next/navigation';
+import {notFound} from "next/navigation";
 
 interface Props {
     params: { clubId: string }
 }
+
+export const generateStaticParams = async () => {
+    const campList = await getCampList();
+    return campList.map((camp) => ({
+        params: {clubId: camp.clubId}
+    }));
+}
+
+export const revalidate = 600;
 
 const Page = async ({params}: Props) => {
 
