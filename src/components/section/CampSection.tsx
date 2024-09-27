@@ -4,7 +4,7 @@ import {CampList} from "@/components/common/camp";
 
 
 const CampSection = async () => {
-    const clubList = await getCampList()
+    const campList = await getCampList()
 
     return (
         <div className={styles.wrapper}>
@@ -20,14 +20,14 @@ const CampSection = async () => {
                     <div style={{height: 12}}/>
                     <div className={styles.description}>
                         <p>소프트웨어과 정보보호과가 준비한 </p>
-                        <p><b>9개</b>의 동아리 캠프를 소개합니다!</p>
+                        <p><b>{campList.length}개</b>의 동아리 캠프를 소개합니다!</p>
                     </div>
                 </div>
 
                 <div className={styles.campContainer}>
 
                 </div>
-                <CampList campList={clubList}/>
+                <CampList campList={campList}/>
             </div>
         </div>
     );
