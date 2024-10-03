@@ -15,7 +15,7 @@ const Footer = async () => {
                 <div className={styles.infoContainer}>
                     <div className={styles.logoContainer}>
                         <Image
-                            src={'/assets/icon/sunrin-logo.svg'}
+                            src={'/assets/icon/sunrin-symbol.svg'}
                             alt={'logo'}
                             width={24}
                             height={30}

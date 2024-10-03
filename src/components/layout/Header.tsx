@@ -14,7 +14,7 @@ const Header = () => {
             <div className={styles.wrapper}>
                 <div className={styles.container}>
                     <Link href={'/'}>
-                        <Image src={'/assets/icon/ssf-logo.svg'} alt={'ssf-logo'} width={84} height={20} priority />
+                        <Image src={'/assets/icon/ssf-symbol.svg'} alt={'ssf-logo'} width={84} height={20} priority />
                     </Link>
                 </div>
             </div>
