@@ -1,5 +1,6 @@
 import styles from './OnBoardingSection.module.scss';
 import Image from "next/image";
+import Link from "next/link";
 
 const OnBoardingSection = () => {
     return (
@@ -29,9 +30,9 @@ const OnBoardingSection = () => {
                 <button className={styles.applyButton}>
                     지원하기
                 </button>
-                <button className={styles.explainButton}>
-                    소개 영상
-                </button>
+                <Link href={'https://www.instagram.com/sunrin_ssf/'} className={styles.snsButton}>
+                    인스타스램
+                </Link>
             </div>
         </div>
     );

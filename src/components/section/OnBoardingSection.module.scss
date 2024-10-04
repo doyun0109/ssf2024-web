@@ -22,9 +22,9 @@
   left: 50%;
   top: 30%;
   transform: translate(-50%, 0);
-    @media (max-width: 500px) {
-        gap: 15px;
-    }
+  @media (max-width: 500px) {
+    gap: 15px;
+  }
 }
 
 .sunrinLogoContainer {
@@ -114,6 +114,9 @@
 @mixin button {
   width: 146px;
   height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   cursor: pointer;
 
@@ -133,7 +136,7 @@
   font-weight: 900;
 }
 
-.explainButton {
+.snsButton {
   @include button;
   background: transparent;
   color: #C6C6D2;
