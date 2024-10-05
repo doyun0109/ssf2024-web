@@ -31,7 +31,7 @@ const OnBoardingSection = () => {
                     지원하기
                 </button>
                 <Link href={'https://www.instagram.com/sunrin_ssf/'} className={styles.snsButton}>
-                    인스타스램
+                    인스타그램
                 </Link>
             </div>
         </div>
