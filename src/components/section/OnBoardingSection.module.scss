@@ -27,7 +27,7 @@
   }
 }
 
-.sunrinLogoContainer {
+.sunrinLogo {
   position: relative;
   width: 182px;
   aspect-ratio: 182/24;
@@ -44,7 +44,7 @@
   }
 }
 
-.ssfLogoContainer {
+.ssfLogo {
   position: relative;
   width: 515px;
   aspect-ratio: 515/203;
@@ -79,12 +79,6 @@
   @media (max-width: 350px) {
     font-size: 14px;
   }
-}
-
-.background {
-  z-index: 0;
-  object-fit: cover;
-  object-position: top;
 }
 
 .overlay {

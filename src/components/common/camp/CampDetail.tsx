@@ -5,6 +5,9 @@ import Image from "next/image";
 import styles from "./CampDetail.module.scss";
 import Link from "next/link";
 import Camp from "@/lib/types/Camp";
+import ShareIcon from "@/assets/icon/share.svg";
+import ArrowIcon from "@/assets/icon/arrow.svg";
+
 
 interface Props {
     camp: Camp
@@ -45,15 +48,15 @@ const CampDetail = ({camp}: Props) => {
                         };
                         if (navigator.canShare(shareData)) await navigator.share(shareData);
                     }}>
-                    <Image src={'/assets/icon/share.svg'} alt={'arrow'} width={24} height={24}/>
+                    <ShareIcon/>
                     캠프 공유하기
                 </button>
                 <Link href={camp.clubWeb} className={styles.linkButton} style={{gridArea: 'link-web'}}>
-                    <Image src={'/assets/icon/arrow.svg'} alt={'arrow'} width={24} height={24}/>
+                    <ArrowIcon/>
                     동아리 웹사이트
                 </Link>
                 <Link href={camp.clubSns} className={styles.linkButton} style={{gridArea: 'link-sns'}}>
-                    <Image src={'/assets/icon/arrow.svg'} alt={'arrow'} width={24} height={24}/>
+                    <ArrowIcon/>
                     동아리 SNS
                 </Link>
             </div>
@@ -89,15 +92,15 @@ const Skeleton = () => {
                 <button
                     className={styles.shareButton}
                     style={{gridArea: 'share'}}>
-                    <Image src={'/assets/icon/share.svg'} alt={'arrow'} width={24} height={24}/>
+                    <ShareIcon/>
                     캠프 공유하기
                 </button>
                 <div className={styles.linkButton} style={{gridArea: 'link-web'}}>
-                    <Image src={'/assets/icon/arrow.svg'} alt={'arrow'} width={24} height={24}/>
+                    <ArrowIcon/>
                     동아리 웹사이트
                 </div>
                 <div className={styles.linkButton} style={{gridArea: 'link-sns'}}>
-                    <Image src={'/assets/icon/arrow.svg'} alt={'arrow'} width={24} height={24}/>
+                    <ArrowIcon/>
                     동아리 SNS
                 </div>
             </div>

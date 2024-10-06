@@ -1,7 +1,6 @@
 import styles from './Footer.module.scss';
 import {getTeamMember} from "@/lib/api/team";
-import Image from "next/image";
-
+import SunrinSymbol from "@/assets/icon/sunrin-symbol.svg";
 
 const Footer = async () => {
     const {
@@ -14,13 +13,7 @@ const Footer = async () => {
             <div className={styles.container}>
                 <div className={styles.infoContainer}>
                     <div className={styles.logoContainer}>
-                        <Image
-                            src={'/assets/icon/sunrin-symbol.svg'}
-                            alt={'logo'}
-                            width={24}
-                            height={30}
-                            className={styles.logo}
-                        />
+                        <SunrinSymbol/>
                         <p className={styles.logoTitle}>
                             선린인터넷고등학교
                         </p>

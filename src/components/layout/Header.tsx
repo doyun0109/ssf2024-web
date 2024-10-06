@@ -1,10 +1,10 @@
 'use client';
 
 import React from 'react';
-import Image from "next/image";
 import styles from './Header.module.scss';
 import {usePathname} from "next/navigation";
 import Link from "next/link";
+import SSFSymbol from "@/assets/icon/ssf-symbol.svg";
 
 const Header = () => {
     const pathName = usePathname();
@@ -13,8 +13,8 @@ const Header = () => {
         <>
             <div className={styles.wrapper}>
                 <div className={styles.container}>
-                    <Link href={'/'}>
-                        <Image src={'/assets/icon/ssf-symbol.svg'} alt={'ssf-logo'} width={84} height={20} priority />
+                    <Link href={'/'} aria-label={"main-page"}>
+                        <SSFSymbol/>
                     </Link>
                 </div>
             </div>

@@ -1,30 +1,28 @@
 import styles from './OnBoardingSection.module.scss';
-import Image from "next/image";
 import Link from "next/link";
+import SSFLogo from "@/assets/icon/ssf-logo.svg";
+import SunrinLogo from "@/assets/icon/sunrin-logo.svg";
+import OnboardingBackground from "@/assets/background/onboarding-background.svg";
 
 const OnBoardingSection = () => {
     return (
         <div className={styles.container}>
-            <Image
-                className={styles.background}
-                src={'/assets/image/onboarding-background.svg'}
-                alt={'background'}
-                fill
-                priority
-            />
+
+            <OnboardingBackground/>
+            <div className={styles.overlay}/>
+
+
             <div className={styles.contentContainer}>
-                <div className={styles.sunrinLogoContainer}>
-                    <Image src={'/assets/icon/sunrin-logo.svg'} alt={'sunrin-logo'} priority fill/>
-                </div>
-                <div className={styles.ssfLogoContainer}>
-                    <Image src={'/assets/icon/ssf-logo.svg'} alt={'ssf-logo'} priority fill/>
-                </div>
+
+                <SunrinLogo className={styles.sunrinLogo}/>
+
+                <SSFLogo className={styles.ssfLogo}/>
+
                 <p className={styles.typography}>
                     2024 Software Share Festival
                 </p>
             </div>
 
-            <div className={styles.overlay}/>
 
             <div className={styles.buttonContainer}>
                 <Link href={process.env.FORM_URL!} className={styles.applyButton}>
