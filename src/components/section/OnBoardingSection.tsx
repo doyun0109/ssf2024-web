@@ -27,10 +27,10 @@ const OnBoardingSection = () => {
             <div className={styles.overlay}/>
 
             <div className={styles.buttonContainer}>
-                <button className={styles.applyButton}>
+                <Link href={process.env.FORM_URL!} className={styles.applyButton}>
                     지원하기
-                </button>
-                <Link href={'https://www.instagram.com/sunrin_ssf/'} className={styles.snsButton}>
+                </Link>
+                <Link href={process.env.INSTAGRAM_URL!} className={styles.snsButton}>
                     인스타그램
                 </Link>
             </div>
