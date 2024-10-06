@@ -13,7 +13,7 @@ const pretendard = localFont({
 });
 
 export const metadata: Metadata = {
-    title: "Sunrin SSF24",
+    title: "2024 소프트웨어 나눔축제",
     description: "2024 선린인터넷고등학교 소프트웨어 나눔축제",
     openGraph: {
         title: '2024 소프트웨어 나눔축제',
