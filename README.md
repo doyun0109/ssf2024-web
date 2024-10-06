@@ -20,7 +20,7 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Environment Variables
-create .env.local file in the root directory and write the following code.
+create `.env.local` file in the root directory and write the following code.
 ```
 API_KEY=/* Your Firebase API Key */
 AUTH_DOMAIN=/* Your Firebase Auth Domain */
