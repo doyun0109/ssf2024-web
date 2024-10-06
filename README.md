@@ -30,4 +30,5 @@ MESSAGING_SENDER_ID=/* Your Firebase Messaging Sender ID */
 APP_ID=/* Your Firebase App ID */
 FORM_URL=/* Your Google Form URL */
 INSTAGRAM_URL=/* Your Instagram URL */
+HOST_URL=/* Website Host URL */
 ```
