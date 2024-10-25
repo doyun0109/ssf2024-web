@@ -31,7 +31,7 @@ const CampDetail = ({camp}: Props) => {
                         </div>
                     ))}
                 </div>
-                <p className={styles.title}>{camp.campName}</p>
+                <p className={styles.title}>{camp.campName.replaceAll('\\n', '\n')}</p>
                 <p className={styles.description}>{camp.campDescription}</p>
             </div>
 

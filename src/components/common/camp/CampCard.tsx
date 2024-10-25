@@ -15,7 +15,7 @@ const CampCard = ({camp, onClick}: Props) => {
         <div className={styles.container} onClick={onClick}>
             <Image src={camp.bookCover} alt={'book-cover'} width={204} height={283} quality={60}/>
             <p className={styles.title}>
-                {camp.campName}
+                {camp.campName.replaceAll('\\n', '\n')}
             </p>
             <div className={styles.infoContainer}>
                 <p className={styles.clubName} style={{color: camp.primaryColor}}>
